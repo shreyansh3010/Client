@@ -17,13 +17,59 @@ body{
     font-family: 'Baloo Bhai', cursive;
     letter-spacing: 10px;
 }
-.vendor_img{
-   
+.vendor_img, .blog_img{
+    margin-top: 5vh;
 }
-.vendor_row_next{
-    padding-left: 10vw;
-    padding-right: 10vw;
-    margin-top: 10vh;
+.vendor_img :hover{
+
+}
+.vendor_row{
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.blog_row{
+    padding-top: 10vh;
+}
+.vendor_btn{
+    background-color: transparent;
+    border: 3px #dc8a74 solid;
+    border-radius: 18px;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 2px;
+}
+.footer-top{
+    background-color: #eee;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.footer-bottom{
+    padding-top: 5px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.footer-bottom a{
+    color: #000000;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+.footer-bottom a:hover{
+    font-weight: bold;
+}
+.footer_menu ul{
+    list-style-type: none;
+    padding-top: 3vh;
+}
+.footer_menu li{
+    margin-top: 1vh;
+}
+.footer_menu li a:hover{
+    color: #dc8a74;
+    font-weight: bold;
+}
+.footer_menu li a{
+     color: #3b3b3b;
+    letter-spacing: 3px;
+    text-decoration: none;
 }
 #section1{
     padding-top: 35vh;
@@ -33,17 +79,29 @@ body{
     padding-top: 20vh;
     padding-bottom: 22vh;
 }
+#section3{
+    padding-top: 0vh;
+    padding-bottom: 22vh;
+}
 #search_box{
     border:5px red  solid;
     border-radius: 50px;
 }
-@media (max-width: 768px) {
-    
+@media (min-width: 768px) {
+    .blog_row{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 }
 @media (min-width: 1200px){
     .nav_items{
         padding: 0vh 1vw 0vh 1vw;
     }
+}
+@media (max-width: 768px) {
+   .footer-top ul{
+       text-align: center;
+   }
 }
 @media (max-width: 950px) {
     .navbar-header {
@@ -82,5 +140,10 @@ body{
     }
      #user_img{
         display: none;
+    }
+}
+@media (max-width: 350px) {
+    .main_title{
+        letter-spacing: normal;
     }
 }
