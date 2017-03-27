@@ -282,6 +282,9 @@ body{
     .social_icons{
         padding-right: 0vw;
     }
+    .footer_menu ul{
+    padding-left: 0px;
+}
 }
 @media (max-width: 950px) {
     .navbar-header {
