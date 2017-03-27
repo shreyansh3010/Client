@@ -201,9 +201,24 @@ body{
     color: #3b3b3b;
     font-family: Myriad Arabic;
 }
+.btn_search{
+    background-color: transparent;
+    border-bottom: 3px #dc8a74 solid;
+    border-top: 3px #dc8a74 solid;
+    border-right: 3px #dc8a74 solid;
+    height: 6vh;
+    margin-left: -1vw;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
 #search{
-    border: 3px #dc8a74 solid;
-    border-radius: 50px;
+    border-bottom: 3px #dc8a74 solid;
+    border-top: 3px #dc8a74 solid;
+    border-left: 3px #dc8a74 solid;
+    border-right: none;
+    border-bottom-right-radius: 0px; 
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
     height: 6vh;
 }
 #user_img{
