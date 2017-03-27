@@ -19,20 +19,60 @@ body{
 }
 .blog_img{
      margin-top: 5vh;
+     display: inline-block;
+     max-width: 100%;
+     height: auto;
+     border: 3px #dc8a74 solid;
+     border-radius: 8px;
+     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4.5px 15px 0 rgba(0, 0, 0, 0.19);
 }
+.blog_text{
+    color: #3b3b3b;
+    position: absolute;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    top: 80%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    
+}
+.blog_text a{
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+.blog_text:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.blog_text:hover:after {
+	width: 100%;
+	background: #dc8a74;
+}
+
 .vendor_img{
     margin-top: 5vh;
     border-radius: 256px;
-    transition: transform 0ms ease-in-out;
-    -webkit-transition: -webkit-transform 0ms ease-in-out;
-    -moz-transition: -moz-transform 0ms ease-in-out;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 500ms ease-in-out;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    -moz-transition: -moz-transform 500ms ease-in-out;
 }
 .vendor_img:hover{
-     
+      box-shadow: 0 0 40px #bd7562  ;
 }
 .vendor_row{
+    padding-top: 5vh;
     padding-left: 15vw;
     padding-right: 15vw;
+    z-index: 2px;
 }
 .blog_row{
     padding-top: 10vh;
@@ -148,9 +188,23 @@ body{
     border-radius: 50px;
     height: 6vh;
 }
-
-
-
+#user_img{
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+.under_vendor{
+    height: 3px;
+    width: 7vw;
+    border-radius: 1px;
+    background-color: #dc8a74;
+}
+.under_blog{
+    height: 3px;
+    width: 6vw;
+    border-radius: 1px;
+    background-color: #dc8a74;
+}
 @media (min-width: 768px) {
     .blog_row{
         padding-left: 10vw;
@@ -162,9 +216,23 @@ body{
         padding: 0vh 1vw 0vh 1vw;
     }
 }
+@media(max-width: 1000px){
+    .under_vendor{
+        width: 10vw;
+    }
+    .under_blog{
+        width: 9vw;
+    }
+}
 @media(max-width:600px){
     .btn_sub{
         margin-left: -12vw;
+    }
+    .under_vendor{
+        width: 20vw;
+    }
+    .under_blog{
+        width: 19vw;
     }
 }
 @media (max-width: 768px) {
@@ -224,5 +292,11 @@ body{
 @media (max-width: 350px) {
     .main_title{
         letter-spacing: normal;
+    }
+    .under_vendor{
+        width: 25vw;
+    }
+    .under_blog{
+        width: 24vw;
     }
 }
