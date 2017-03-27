@@ -75,7 +75,7 @@ body{
     z-index: 2px;
 }
 .blog_row{
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 .vendor_btn{
     background-color: transparent;
@@ -182,6 +182,24 @@ body{
 #section3{
     padding-top: 0vh;
     padding-bottom: 22vh;
+}
+#section4{
+    padding-bottom: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.carousel_item{
+    width: 60vw;
+    padding-top: 5vh;
+    padding-bottom: 8vh; 
+}
+.carousel_text{
+    padding-top: 5vh;
+    padding-left: 1px;
+    padding-right: 1px;
+    letter-spacing: 3px;
+    color: #3b3b3b;
+    font-family: Myriad Arabic;
 }
 #search{
     border: 3px #dc8a74 solid;
