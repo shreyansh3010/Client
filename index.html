@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Company</title>
+    <title>Wedding Nirvana</title>
+    <link rel="shortcut icon" href="media/favicon.png" />
+    <link rel="icon" href="media/favicon.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
     
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    
+    <link rel="shortcut icon" href="images/media/favicon.png" />
+    <link rel="icon" href="images/media/favicon.png" type="image/png"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +24,7 @@
     <![endif]-->
   </head>
   <body>
-       <nav class="navbar navbar-default navbar-fixed-top">
+       <nav class="navbar navbar-default" class="custom_nav">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -31,11 +34,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div class="centered-navbar"><a href="#"><img src="http://placehold.it/60x50" style="height50px; width60px;"></a></div>
+                <div class="centered-navbar"><a href="#"><img src="media/main_logo.png" class="nav_logo"></a></div>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="border-color: transparent">
                 <ul class="nav navbar-nav">
                     <li class="nav_items"><a href="#">ABOUT <span class="sr-only">(current)</span></a></li>
                     <li class="nav_items"><a href="#">FEATURES</a></li>
@@ -45,33 +48,102 @@
                 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav_items"><a href="#">BLOG</a></li>
-                    <li class="nav_items"><a href="#">CONTACT</a></li> 
-                    <li class="nav_items"><a href="#">DASHBOARD</a></li>
-                    <li class="nav_items"><a href="#">LOGOUT</a></li>
-                    <li><img src="http://placehold.it/50x50" alt="..." class="img-circle" id="user_img"></li>
+                    <li class="nav_items"><a href="#">CONTACT</a></li>
+                    <li class="nav_items log_out"><a href="#">LOGOUT</a></li>
+                    <li class="nav_items"><center><button class="btn nav_signup_btn" data-toggle="modal" data-target="#signup_modal">SIGN UP</button></center></li> 
+                    <li class="nav_items"><center><button class="btn nav_signin_btn" data-toggle="modal" data-target="#signin_modal">SIGN IN</button></center></li>
+                    <li class="nav_items nav_item_mobile" data-toggle="modal" data-target="#signup_modal"><a href="#">SIGN UP</a></li> 
+                    <li class="nav_items nav_item_mobile" data-toggle="modal" data-target="#signin_modal"><a href="#">SIGN IN</a></li>
                 </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
 
+        <!-- Modal -->
+        <div class="modal fade-scale" id="signin_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top: 20vh;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content signin_modal">
+            <div class="modal-header">
+                <h4 class="modal-title modal_text" id="myModalLabel"><center>SIGN IN</center></h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mat-div">
+                        <label for="first-name" type="email" class="mat-label">Email</label>
+                        <input type="text" class="mat-input" id="first-name">
+                    </div>
+                    <div class="mat-div">
+                        <label for="first-name" class="mat-label">Password</label>
+                        <input type="text" class="mat-input" id="first-name">
+                    </div>
+                    <input type="radio" class="signin_radio" style="margin-top: 15px; margin-bottom: 15px;"><p style="display: inline; font-weight: 100"> Remember Password</p>
+                    <br>
+                    <center><button class="btn form_signup_btn">LOGIN</button></center>
+                    <br>
+                    <center><button class="btn form_signup_fbtn">FACEBOOK</button></center>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <center><p class="signup_vendor">Not register yet?</p></center>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <center><p class="signup_vendor">Forget password?</p></center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
 
+        <div class="modal fade-scale" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-top: 25vh;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content signup_modal">
+            <div class="modal-header">
+                <h4 class="modal-title modal_text" id="myModalLabel"><center>SIGN UP</center></h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mat-div">
+                        <label for="first-name" type="email" class="mat-label">Email</label>
+                        <input type="text" class="mat-input" id="first-name">
+                    </div>
+                    <div class="mat-div">
+                        <label for="first-name" class="mat-label">Password</label>
+                        <input type="text" class="mat-input" id="first-name">
+                    </div>
+                    <br>
+                    <br>
+                    <center><button class="btn form_signup_btn">GET STARTED</button></center>
+                    <br>
+                    <center><p class="signup_vendor">Are you a vendor? <a href="#">Sign Up</a></p></center>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
 
         <section id="section1">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="main_title">THE INTELLIGENT WAY</h1>
+                        <h1 class="main_title">THE INTELLIGENT WAY TO PLAN</h1>
                     </div>
-                    <div class="col-md-6 col-sm-8 col-xs-10 col-md-offset-3 col-xs-offset-1 col-sm-offset-2" style="margin-top:10vh;">
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-sm-10 col-xs-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-1" style="margin-top:10vh;">
+                        <center>
                         <form>
-                            <div class="col-md-11 col-lg-11 col-sm-11 col-xs-11" style="padding: 0px;">
-                            <input type="email" class="form-control" id="search">
+                            <div class="col-md-11 col-lg-11 col-sm-11 col-xs-10" style="padding: 0px;">
+                            <input type="text" class="form-control" id="search" placeholder="e.g: Wedding Planner, Photographer, Venue, DJ's, Hostel, Catering Service">
                             </div>
-                            <div class="col-md-1 col-lg-1 col-sm-1 col-xs-1" style="padding: 0px;">
+                            <div class="col-md-1 col-lg-1 col-sm-1 col-xs-2" style="padding: 0px;">
                                 <button class="btn btn_search"><img src="icons/search.png"/></button>
                             </div>
                         </form>
+                        </center>
                     </div>
+                </div>
                     <div class="col-xs-12 col-md-4 col-md-offset-4" style="margin-top:5vh;">
                         <center><p style="letter-spacing: 3px;">LAL BAGH, DELHI<img src="icons/map.png" style="margin-left: 1vw"></p></center>
                     </div>
@@ -217,36 +289,41 @@
                             </ul>
                         </div>
                         <div class="col-sm-6 col-md-6 col-xs-12">
-                            <h3 class="footer_update">WE HATE SPAM, WE LOVE UPDATES.</h3>
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <center><p class="footer_update">WE HATE SPAM, WE LOVE UPDATES.</p></center>
+                            </div>
                             <form>
-                            <div class="form-group" style="padding-left: 5vw; padding-right: 5vw;">
-                                <form>
+                            <div class="form-group">
                                     <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email" style="background-color: #eee;">
+                                        <input type="email" class="form-control input_sub" id="exampleInputEmail1" placeholder="Your email" style="background-color: #eee;">
                                     </div>
                                     <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
                                         <button class="btn btn_sub">SUBSCRIBE</button>
                                     </div>
-                                </form>
                             </div>
                         </form>
                         </div>
                         <div class="col-sm-3 col-md-3 col-xs-12">
-                            <div class="row">
+                            <div class="row"><center>
                                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-4 col-lg-offset-4">
-                                    <h3><center>SOCIAL MEDIA</center></h3>
+                                    <h3 style="letter-spacing: 1px;">SOCIAL MEDIA</h3></center>
                                 </div>
+                                <center>
                                 <div class="social_icons">
-                                    <center>
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-md-offset-6 col-sm-offset-3 col-xs-offset-3 col-lg-offset-6"><img src="icons/twitter.png" class="social_hover"></div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-md-offset-5 col-sm-offset-3 col-xs-offset-3 col-lg-offset-5"><img src="icons/twitter.png" class="social_hover"></div>
                                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="icons/facebook.png" class="social_hover"></div>
                                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><img src="icons/google.png" class="social_hover"></div>
-                                    </center>
                                 </div>
+                                </center>
                             </div>
-                            <div class="row">
-                                <h5 class="social_message"><center>MADE WITH <span>LOVE</span> IN INDIA</center></h5>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8 col-xs-12 copy_right">
+                            <p>WEDDING NIRVANA, ALL RIGHTS RESERVED 2017</p>
+                        </div>
+                        <div class="col-md-6 col-sm-4 col-xs-12">
+                           <h5 class="social_message"><center>MADE WITH <span>LOVE</span> IN INDIA</center></h5>
                         </div>
                     </div>
                 </div>
@@ -254,7 +331,7 @@
             <div class="footer-bottom">
                 <div class="container-fluid">
                     <div class="row">
-                        <center><p class="pull-left"><a href="#">PRIVACY POLICY </a>/ <a href="#">TERMS AND CONDITIONS </a>/ <a href="#"> FAQ</a></p></center>
+                        <center><p class="pull-left"><a href="#">PRIVACY POLICY </a> / <a href="#">TERMS AND CONDITIONS </a> / <a href="#"> FAQ</a></p></center>
                     </div>
                 </div>
             </div>
@@ -265,6 +342,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
  
