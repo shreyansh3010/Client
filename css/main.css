@@ -178,7 +178,7 @@ body{
     padding-left: 3vw;
     padding-right: 3vw;
     border-radius: 40px;
-    margin-left: -7.5vw;
+    margin-left: -6vw;
     height: 45px;
     letter-spacing: 1px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -222,7 +222,7 @@ body{
     border-top: 3px #dc8a74 solid;
     border-right: 3px #dc8a74 solid;
     height: 55px;
-    margin-left: -3vw;
+    margin-left: -3.5vw;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -425,6 +425,11 @@ signin_radio{
         padding-right: 10vw;
     }
 }
+@media(max-width:1300px){
+    .btn_sub{
+        margin-left: -8vw; 
+    }
+}
 @media (min-width: 1200px){
     .nav_items{
         padding: 0vh 1vw 0vh 1vw;
@@ -436,6 +441,9 @@ signin_radio{
     }
     .under_blog{
         width: 9vw;
+    }
+    .btn_sub{
+        margin-left: -9vw; 
     }
 }
 @media(max-width: 950px){
@@ -453,6 +461,14 @@ signin_radio{
     .nav_signin_btn{
         display: none;
     }
+    .btn_sub{
+        margin-left: -11vw; 
+    }
+}
+@media(max-width:850px){
+    .btn_sub{
+        margin-left: -13vw; 
+    }
 }
 @media(max-width:767px){
     .copy_right{
@@ -466,17 +482,46 @@ signin_radio{
     .footer-top{
     padding-left: 15px;
     padding-right: 15px;
-}
+    }
+    .btn_sub{
+        margin-left: -7vw; 
+    }
+    
 }
 @media(max-width:600px){
     .btn_sub{
-        margin-left: -12vw;
+        margin-left: -10vw;
     }
     .under_vendor{
         width: 20vw;
     }
     .under_blog{
         width: 19vw;
+    }
+}
+@media(max-width:500px){
+    .btn_sub{
+        margin-left: -13vw;
+    }
+}
+@media(max-width:471px){
+    .btn_sub{
+        margin-left: -16vw;
+    }
+}
+@media(max-width:400px){
+    .btn_sub{
+        margin-left: -19vw;
+    }
+}
+@media(max-width:359px){
+    .btn_sub{
+        margin-left: -21vw;
+    }
+}
+@media(max-width:330px){
+    .btn_sub{
+        margin-left: -23vw;
     }
 }
 @media (max-width: 768px) {
