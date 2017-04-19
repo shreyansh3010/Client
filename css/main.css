@@ -95,7 +95,7 @@ body{
 }
 
 .footer-top{
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 30px;
@@ -222,7 +222,7 @@ body{
     border-top: 3px #dc8a74 solid;
     border-right: 3px #dc8a74 solid;
     height: 55px;
-    margin-left: -3.5vw;
+    margin-left: -2.5vw;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -233,7 +233,7 @@ body{
     border-right: none;
     padding-left: 20px;
     padding-top: 8px;
-    margin-right: -3vw;
+    margin-right: -2.5vw;
     border-bottom-right-radius: 0px; 
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
@@ -308,7 +308,25 @@ body{
     max-width: 300px;
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 0 0 40px #888888  ;
+    box-shadow: 0 0 40px #888888;
+}
+.contact_modal{
+    border: 2px solid #dc8a74;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px 8vw;
+    box-shadow: 0 0 40px #888888;
+}
+.contact_submit{
+    color: #000000;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    float: right;
+    border: 3px solid #000000;
+    border-radius: 17px;
+    padding: 6px 35px;
 }
 .fade-scale {
   opacity: 0;
@@ -336,6 +354,14 @@ body{
     border-right: none;
 }
 .mat-label {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 100;
+  transform: translateY(30px);
+  color: #000000;
+  transition: all 0.25s;
+}
+.mat-label1 {
   display: block;
   font-size: 0.7em;
   font-weight: 100;
@@ -383,10 +409,17 @@ body{
 .is-active .mat-label {
   color: #dc8a74;
 }
+.is-active .mat-label1 {
+  color: #dc8a74;
+}
 
 .is-completed .mat-label {
   font-size: 12px;
   transform: translateY(15px);
+}
+.is-completed .mat-label1 {
+  font-size: 12px;
+  transform: translateY(4px);
 }
 .form_signup_btn{
     color: #ffffff;
@@ -419,6 +452,45 @@ signin_radio{
     margin-top: 2px; 
     color: gray;
 }
+
+
+
+
+#about_start{
+    margin-top: 5vh;
+    padding: 10vh 7vw;
+    background-color: #f3c1b8;
+    color: #ffffff;
+}
+#about_content{
+    padding: 10vh 5vw 2vh 5vw;
+}
+.primary_heading{
+    font-size: 5.2vw;
+    letter-spacing:10px;
+    margin: 0px;
+}
+.secondary_heading{
+    margin: 0px;
+    font-size: 2.4vw;
+    letter-spacing:5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+.team_img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
 @media (min-width: 768px) {
     .blog_row{
         padding-left: 10vw;
