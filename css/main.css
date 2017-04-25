@@ -462,6 +462,8 @@ signin_radio{
 
 
 
+
+
 #about_start{
     margin-top: 5vh;
     padding: 10vh 7vw;
@@ -486,6 +488,7 @@ signin_radio{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     letter-spacing: 2px;
+    padding: 0 5vw;
     text-align: justify;
 }
 .team_img{
@@ -499,6 +502,33 @@ signin_radio{
     height: auto;
     border-radius: 20px;
 }
+
+
+
+#search_result{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#search_input{
+    height: 55px;
+    padding: 0 30px;
+    background-color: #f5f5f5;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.search_heading{
+    letter-spacing: 1px;
+    margin-bottom: 2vh;
+}
+.filterBtn{
+    color: #8a8a8a;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.filterBtn :hover {
+    color: #000000;
+}
+
 
 
 
@@ -578,6 +608,19 @@ signin_radio{
         text-align: center !important;
         margin-left: 0px;
     }
+     .footer-top ul{
+       text-align: center;
+   }
+    .search_heading{
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    .filterBtn{
+        color: #8a8a8a;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: center;
+    }
     
 }
 @media(max-width:600px){
@@ -617,9 +660,6 @@ signin_radio{
     }
 }
 @media (max-width: 768px) {
-   .footer-top ul{
-       text-align: center;
-   }
    .footer_social{
         float: none;
     }
