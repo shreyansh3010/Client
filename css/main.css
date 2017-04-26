@@ -528,7 +528,43 @@ signin_radio{
 .filterBtn :hover {
     color: #000000;
 }
-
+.search_cards{
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    border: 1px solid #dc8a74;
+    margin: 5vh auto;
+}
+.search_card_img{
+     display: inline-block;
+     max-width: 100%;
+     height: auto;
+     border-radius: 10px;
+}
+.search_cards_row{
+    padding: 10vh 1vw 25vh 1vw;
+}
+.search_cards_text{
+    padding: 10px 1vw;
+}
+.search_cards p{
+    margin-bottom: 0 !important;
+}
+.search_cards_primaryText{
+    color: #000000;
+    letter-spacing: 0.2vw;
+    text-align: center;
+    margin-top: 1vh;
+}
+.search_cards_secondaryText{
+    color: #888888;
+    font-size: 1em;
+    text-align: center;
+}
+.ratings{
+    text-align: center;
+}
 
 
 
