@@ -86,10 +86,15 @@ body{
     letter-spacing: 2px;
     cursor: pointer;
 }
+button.vendor_btn a{
+    color: #000000;
+    text-decoration: none;
+}
 .vendor_btn:hover{
     box-shadow: inset 200px 0 0 0 #dc8a74;
     color: #FFF;
     border-radius: 18px;
+    
 }
 
 .footer-top{
@@ -516,6 +521,9 @@ signin_radio{
     font-size: 1.3em;
     letter-spacing: 1px;
 }
+#range{
+    padding: 8vh 2vw 4vh 2vw;
+}
 .search_heading{
     letter-spacing: 1px;
     margin-bottom: 2vh;
@@ -524,8 +532,9 @@ signin_radio{
     color: #8a8a8a;
     font-weight: normal;
     letter-spacing: 1px;
+    padding: 2vh 0;
 }
-.filterBtn :hover {
+.filterBtn:hover {
     color: #000000;
 }
 .search_cards{
@@ -564,6 +573,49 @@ signin_radio{
 }
 .ratings{
     text-align: center;
+    color: #FFD700;
+}
+.range_result{
+    text-align: center;
+    padding-top: 4vh;
+    font-size: 1.5em;
+}
+.filter_options{
+    padding: 3vh 2vw;
+    background-color: #f4f4f4;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.filter_options:hover{
+    background-color:#dc8a74;
+    color: #FFF;
+}
+.rating_stars{
+    padding: 5vh 0;
+}
+.service_options{
+    padding: 5vh 0;
+}
+.service_options ul{
+    list-style-type: none;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.service_options li a:hover{
+    color: #000000;
+    font-weight: bold;
+}
+.service_options a{
+    color: #8a8a8a;
+    text-decoration: none;
+}
+.service_options a:hover{
+    font-weight: bold;
+}
+.service_options li{
+    margin-top: 0.5vh;
 }
 
 
@@ -613,6 +665,9 @@ signin_radio{
     .btn_sub{
         margin-left: -11vw; 
     }
+    .service_options ul{
+        padding-left: 2.5vw;;
+    }
 }
 @media(max-width:850px){
     .btn_sub{
@@ -657,7 +712,9 @@ signin_radio{
         letter-spacing: 1px;
         text-align: center;
     }
-    
+    .service_options ul{
+        text-align: center;
+    }
 }
 @media(max-width:600px){
     .btn_sub{
