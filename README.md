@@ -1,2 +1,2 @@
 # Wedding Nirvan
-frontEnd of a online wedding site for client
+frontEnd of an online wedding site for client
